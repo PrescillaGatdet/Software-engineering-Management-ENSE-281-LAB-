@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-Vote</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+    <h1>Note-Vote</h1>
+
+    <main class="main-wrapper">
+        <section class="card profile-section">
+            <div class="user-info">
+                <button class="settings-btn">⚙️ Logged in as a@a.a</button>
+            </div>
+            <button class="logout-btn">Log Out</button>
+        </section>
+
+        <section class="card notes-section">
+            <div class="note-list">
+                <div class="note-row">
+                    <input type="text" value="this is a note you upvoted" readonly>
+                    <button class="vote-btn">↑</button>
+                    <button class="vote-btn active">↓</button>
+                    <span class="score">1</span>
+                </div>
+
+                <div class="note-row">
+                    <input type="text" value="this is a note you downvoted" readonly>
+                    <button class="vote-btn">↑</button>
+                    <button class="vote-btn active">↓</button>
+                    <span class="score">-1</span>
+                </div>
+
+                <div class="note-row">
+                    <input type="text" value="this is a note you haven't voted" readonly>
+                    <button class="vote-btn">↑</button>
+                    <button class="vote-btn">↓</button>
+                </div>
+
+                <div class="note-row submitted">
+                    <input type="text" value="this is a note you submitted" readonly>
+                    <span class="score">0</span>
+                </div>
+            </div>
+
+            <div class="add-note">
+                <input type="text" placeholder="Enter a new note here">
+                <button class="add-btn">Add</button>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
