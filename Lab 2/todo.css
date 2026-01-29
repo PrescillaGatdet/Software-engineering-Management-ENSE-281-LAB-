@@ -1,0 +1,118 @@
+/* Core Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.main-wrapper {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between the two cards */
+}
+
+/* Card Styling */
+.card {
+    background-color: #f1f5f9; /* Light blue-gray tint */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Button Reset & Styling */
+button {
+    background-color: #efefef;
+    border: 1px solid #adadad;
+    border-radius: 3px;
+    padding: 4px 12px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #e2e2e2;
+    border-color: #888;
+}
+
+/* User Section Specifics */
+.user-info {
+    margin-bottom: 20px;
+}
+
+.logout-btn {
+    font-size: 0.9rem;
+}
+
+/* Note Rows Alignment */
+.note-row {
+    display:inline
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.note-row input {
+    width: 280px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #555;
+}
+
+/* Vote Buttons & Score */
+.vote-btn {
+    font-weight: bold;
+    min-width: 32px;
+}
+
+.vote-btn.active {
+    background-color: #cbd5e1; /* The "selected" gray in your image */
+}
+
+.score {
+    min-width: 25px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Matching the "Submitted" alignment from your screenshot */
+.note-row.submitted {
+    padding-left: 82px; /* Offsets for the missing vote buttons */
+}
+
+/* Add Note Section */
+.add-note {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.add-note input {
+    width: 280px;
+    padding: 8px;
+}
+
+.add-btn {
+    padding: 5px 20px;
+}
